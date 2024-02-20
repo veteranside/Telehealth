@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    *{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    }
+
+    .logo{
+    font-size: 2em;
+    color: #7dbaef;
+    user-select: none;
+}
+    .navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #020a11;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #136cd8;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition:.5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+/*.navigation .btnLogin-popup :hover{
+    background-color: #ca1515;
+    color: #642a6c;
+    
+}
+.navigation .btndocLogin-popup{
+    width: 130px;
+    height: 40px;
+    background-color: beige;
+    border: 2px solid #fff;
+    align-items: center;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: transform 1s;
+}*/
+
+header {
+    position: fixed;
+    top:0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+
+    .about{
+        width: 100%;
+        padding: 78px 0px;
+        background-color: white;
+    }
+
+    .about img{
+        height: auto;
+        width: 450px;
+    }
+
+    .about-text{
+        width: 550px;
+    }
+
+    .main{
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about-text h1{
+        color: rgb(135, 207, 240);
+        font-size: 80px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .about-text h3{
+        color: rgb(135, 207, 240);
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+    span{
+        color: rgb(13, 4, 113);
+    }
+
+    .about-text p{
+        color: rgb(5, 122, 157);
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-size: 20px;
+        margin-bottom: 45px;
+        text-align: justify;
+    }
+
+    button{
+        background: rgb(13, 4, 113);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .2s;
+    }
+
+    button:hover{
+        background: red;
+        border: 2px solid;
+    }
+
+    .about-text a{
+    color: white;
+    text-decoration: none;
+    font-weight:650;
+    }
+</style>
+    <head>
+        <title>About Us</title>
+
+        <header>
+            <h2 class="logo">TeleHealth Platform</h2>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Developers</a>
+                <a href="doc.html">DOCTOR?</a>
+            </nav>
+            </header>
+    </head>
+
+    <body>
+        <section class="about">
+            <div class="main">
+                <img src="brain2.jpg">
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <h3>Welcome to <span>TeleHealth Platform</span></h3>
+                    <p> We are focused on providing a mental healthcare Platform
+                        to reduce patient waiting time for consultant and minimize 
+                        communication gap between doctor and patient. TeleHealth 
+                        platform allows users to select the symptoms once they sign up and 
+                        login. This is a very user-friendly and confidential platform.
+                        Our specialized doctors will evaluate the results and can ask more 
+                        questions if necessary and provide the feedback, suggestions or pescriptions.
+                    </p>
+
+                    <button type="button"><a href="patientReg.html" class= "register-link">Signup and Take care </a></button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+   
+                
+    
